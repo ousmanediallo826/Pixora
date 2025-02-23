@@ -41,6 +41,7 @@ ul li a {
 .search-section h1 {
     font-size: 3rem;
     margin-bottom: 0.5em;
+    text-align: center;
 }
 .search-section input {
     width: 23em;
@@ -60,7 +61,7 @@ ul li a {
     cursor: pointer;
 }
 
-@media (max-width: 500px) {
+@media (max-width:  500px)  {
     .search-section input {
         width: 15em;
         height: 3em;
@@ -74,4 +75,115 @@ ul li a {
     .search-section {
         margin: 10em 20px;
     }
+    .search-section h1 {
+        max-width: 600px;
+        margin-left: 40px;
+        width: 100%;
+        font-size: 2rem;
+    }
+    h1 {
+        width: 100%;
+
+    }
+    .search-section button {
+        margin-left: 100px;
+    }
 }
+@media (max-width:  800px)  {
+    .search-section input {
+        width: 20em;
+        height: 3em;
+        border-radius: 90px;
+        margin-right: 10px;
+        border: 3px solid #003049;
+        padding-left: 20px;
+        font-size: 1.5rem;
+        margin-bottom: 20px;
+    }
+    .search-section {
+        margin: 10em 20px;
+    }
+}
+
+#photo-section {
+    max-width: 90%; 
+    margin: 7em auto !important; 
+    padding: 0 2em;
+}
+
+.photo-items {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    justify-content: center;
+    align-items: center;
+    gap: 10px; 
+}
+
+.photo-items img {
+    width: 100%;  
+    height: 350px;  
+    object-fit: cover; 
+    border-radius: 8px;
+}
+
+
+@media (max-width: 1024px) {
+    .photo-items {
+        grid-template-columns: repeat(3, 1fr); 
+    }
+}
+
+@media (max-width: 768px) {
+    .photo-items {
+        grid-template-columns: repeat(2, 1fr); 
+    }
+}
+
+@media (max-width: 500px) {
+    .photo-items {
+        grid-template-columns: repeat(1, 1fr);
+        justify-content: center;
+        align-items: center;
+        margin-left: 90px;
+    }
+    .photo-items img {
+        width: 400px;
+        align-self: center;
+    }
+}
+
+.section-button {
+    display: none;
+  float: right;
+  margin-right: 30px;
+  margin-bottom: 30px;
+
+}
+.section-button button {
+    padding: 10px 30px;
+    background-color: #caf0f8;
+    border-radius: 10px;
+    font-size: 2em;
+   
+}
+footer {
+    display: none;
+    justify-content: space-around;
+    align-content: center;
+    background-color: black;
+    padding: 100px;
+    color: #a2d2ff;
+}
+footer h2 {
+    font-size: 3rem;
+}
+footer ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    font-size: 3em;
+}
+footer ul li i {
+    color: #a2d2ff;
+}
+
